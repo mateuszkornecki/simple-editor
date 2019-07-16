@@ -16,23 +16,44 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     display: grid;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header header header" ". main ." ". footer .";
     grid-template-rows: 1fr 0.84fr 0.16fr;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
-footer {
+.footer {
     grid-area: footer;
     background: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     //min-height: 40vh;
 }
 
-header {
+.header {
     grid-area: header;
     background: skyblue;
     min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__logo {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        z-index: 5;
+        color: hotpink;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: red;
+    }
 }
 
-main {
+.main {
     grid-area: main;
     background: greenyellow;
     min-height: 84vh;
