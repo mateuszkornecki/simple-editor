@@ -26,6 +26,7 @@
 </head>
 
 <body>
+    <!--TODO: ADD FORM FEATURES-->
     <div class="parent">
         <header class="header">
             <div class="header__wrapper">
@@ -37,27 +38,27 @@
                         <a href="#editor" class="navigation__link">Editor</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#github" class="navigation__link">Github</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Test</a>
+                        <a href="https://github.com/mateuszkornecki" class="navigation__link">Github</a>
                     </li>
                 </ul>
             </div>
-            <div class="header__logo">logo</div>
+            <div class="header__logo"></div>
         </header>
-        <main class="main">3</main>
+        <main class="main" id="editor">
+        </main>
         <div class="editor">
-            <div class="wrapper">
-                <h2 id="editor">title</h2>
-                <textarea class="textarea">sad</textarea>
+            <h2 class="editor__heading">
+                <input class="editor__title" placeholder="Title">
+            </h2>
+            <textarea class="editor__text-area" placeholder="Just start typing..">sad</textarea>
+            <div class="editor__wrapper">
                 <button> load </button>
                 <button> save </button>
             </div>
         </div>
-        <div class="footer">Created with love in Cracow</div>
-    </div>
 
+        <div class="footer">Created with ❤️ in Cracow</div>
+    </div>
     <script src="js/main.js"></script>
 </body>
 
