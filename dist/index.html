@@ -26,40 +26,38 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <h1 class="header__heading">Simple editor</h1>
-            <span class="header__description">
-            Prosty edytor tekstowy, przechowujący wpisaną treść w xx pamięci, całkowicie odporny na odświerzanie.
-            UI strony zainspirowane layoutem
-            <a class="header__link" href="https://www.conventionalcommits.org/">conventionalcommits.org </a> 
-        </span>
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#editor">Edytor</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="https://github.com/mateuszkornecki">Github</a>
-                </li>
-            </ul>
+    <div class="parent">
+        <header class="header">
+            <div class="header__wrapper">
+                <h1 class="header__heading">Simple editor</h1>
+                <span class="header__description">Prosty edytor tekstowy, przechowujący wpisaną treść w xx pamięci,
+                    całkowicie odporny na odświerzanie. UI strony zainspirowane layoutem</span>
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#editor" class="navigation__link">Editor</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#github" class="navigation__link">Github</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Test</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__logo">logo</div>
+        </header>
+        <main class="main">3</main>
+        <div class="editor">
+            <div class="wrapper">
+                <h2 id="editor">title</h2>
+                <textarea class="textarea">sad</textarea>
+                <button> load </button>
+                <button> save </button>
+            </div>
         </div>
-        <div class="header__logo">LOGO</div>
-    </header>
-    <main class="main">
-        <section class="editor" id="editor">
-            <h2 class="editor__title">Title</h2>
-            <p class="editor__text-area">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a massa purus. Vestibulum sollicitudin auctor mi, ac ornare lectus porttitor non. In enim mi, tincidunt sit amet nulla eu, ultrices egestas mi. Sed at nunc at diam ultrices cursus vel lacinia
-                lacus. Donec faucibus sodales risus, vel lobortis neque viverra vitae. Donec ut nisl mi. Donec quis ante et est rhoncus volutpat sit amet eu dolor. Sed vel ornare velit. Donec aliquam ipsum eu ipsum ullamcorper, a luctus metus dignissim.
-                Pellentesque tristique tincidunt tincidunt. Praesent gravida erat quis tincidunt suscipit.
-            </p>
-            <button class="load__button">Load</button>
-            <button class="save__button">Save</button>
-        </section>
-    </main>
-    <footer class="footer">
-        Created with ❤️ in Cracow
-    </footer>
+        <div class="footer">Created with love in Cracow</div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 
