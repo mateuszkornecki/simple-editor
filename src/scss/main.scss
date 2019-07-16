@@ -1,16 +1,39 @@
 @import "_normalize";
 @import "_variables";
-
-
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+    color: $yellow;
+    background: $violet;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 1fr 0.84fr 0.16fr;
+}
+
+footer {
+    grid-area: footer;
+    background: hotpink;
+    //min-height: 40vh;
+}
+
+header {
+    grid-area: header;
+    background: skyblue;
+    min-height: 100vh;
+}
+
+main {
+    grid-area: main;
+    background: greenyellow;
+    min-height: 84vh;
 }
