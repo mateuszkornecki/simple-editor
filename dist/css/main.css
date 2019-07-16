@@ -377,10 +377,11 @@ body {
           flex-direction: column; }
   .editor__text-area {
     min-width: 90%;
-    min-height: 50%; }
+    min-height: 80%; }
   .editor__wrapper {
     -ms-flex-item-align: end;
-        align-self: flex-end; }
+        align-self: flex-end;
+    padding: 16px; }
 
 .footer {
   background-color: #F5F5F5;

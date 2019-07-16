@@ -16,6 +16,7 @@
         }
         
         // TODO: STYLE IT LIKE IN FIGMA PROJECT
+        // TODO: GRID HEADING TO BE ON CENTER
         .parent {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -52,10 +53,11 @@
             flex-direction: column;
             &__text-area {
                 min-width: 90%;
-                min-height: 50%;
+                min-height: 80%;
             }
             &__wrapper {
                 align-self: flex-end;
+                padding: 16px;
             }
         }
         
