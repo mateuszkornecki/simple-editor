@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Simple editor</title>
     <meta name="description" content="Description" />
-
     <!-- Title -->
     <meta property="og:title" content="" />
     <!-- OPTIONAL description. 2-4 sentences. -->
@@ -21,44 +20,44 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+    <link rel="icon" type="image/png" href="#FAVICON" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
     <!--TODO: ADD FORM FEATURES-->
-    <div class="parent">
-        <header class="header">
-            <div class="header__wrapper">
-                <h1 class="header__heading">Simple editor</h1>
-                <span class="header__description">Prosty edytor tekstowy, przechowujący wpisaną treść w xx pamięci,
-                    całkowicie odporny na odświerzanie. UI strony zainspirowane layoutem</span>
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#editor" class="navigation__link">Editor</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="https://github.com/mateuszkornecki" class="navigation__link">Github</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__logo"></div>
-        </header>
-        <main class="main" id="editor">
-        </main>
-        <div class="editor">
-            <h2 class="editor__heading">
-                <input class="editor__title" placeholder="Title">
-            </h2>
-            <textarea class="editor__text-area" placeholder="Just start typing..">sad</textarea>
-            <div class="editor__wrapper">
-                <button> load </button>
-                <button> save </button>
-            </div>
+    <div class="header__background"></div>
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="header__heading">Simple editor</h1>
+            <span class="header__description">Prosty edytor tekstowy, przechowujący wpisaną treść w xx pamięci,
+                całkowicie odporny na odświerzanie. UI strony zainspirowane layoutem</span>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#editor" class="navigation__link">Editor</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="https://github.com/mateuszkornecki" class="navigation__link">Github</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="footer">Created with ❤️ in Cracow</div>
+        <div class="header__logo"></div>
+    </header>
+    <div class="header__background"></div>
+    <main class="main" id="editor">
+    </main>
+    <div class="editor">
+        <h2 class="editor__heading">
+            <input class="editor__title" placeholder="Title">
+        </h2>
+        <textarea class="editor__text-area" placeholder="Just start typing..">sad</textarea>
+        <div class="editor__wrapper">
+            <button> load </button>
+            <button> save </button>
+        </div>
     </div>
+
+    <div class="footer">Created with ❤️ in Cracow</div>
     <script src="js/main.js"></script>
 </body>
 
