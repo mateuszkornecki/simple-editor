@@ -353,7 +353,8 @@ body {
     font-family: 'Roboto', sans-serif;
     min-width: 90%;
     min-height: 80%;
-    background-color: #FAFAFA; }
+    background-color: #FAFAFA;
+    border: none; }
   .editor__title {
     background-color: #FAFAFA;
     border: 0px;
@@ -399,6 +400,7 @@ body {
   padding: 16px;
   color: #FEFEFE; }
   .header__background {
+    background: #F479A6;
     background: -webkit-linear-gradient(334.24deg, #F479A6 6.65%, rgba(233, 138, 51, 0.58) 86.69%);
     background: -o-linear-gradient(334.24deg, #F479A6 6.65%, rgba(233, 138, 51, 0.58) 86.69%);
     background: linear-gradient(115.76deg, #F479A6 6.65%, rgba(233, 138, 51, 0.58) 86.69%);
@@ -419,6 +421,8 @@ body {
     height: 100px; }
     .header__logo::after {
       content: ">_"; }
+  .header__link {
+    color: #FEFEFE; }
 
 .main {
   background-color: #F5F5F5;
@@ -435,7 +439,9 @@ body {
   display: flex;
   padding: 0; }
 
-.navigation__item {
+.navigation__link {
+  color: #F5F5F5;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,9 +456,8 @@ body {
   border-radius: 16px;
   min-width: 100px;
   min-height: 32px; }
-
-.navigation__link {
-  color: #F5F5F5;
-  text-decoration: none; }
+  .navigation__link:hover {
+    background-color: #FEFEFE;
+    color: #F479A6; }
 
 /*# sourceMappingURL=main.css.map */
