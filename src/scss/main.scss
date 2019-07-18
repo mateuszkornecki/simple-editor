@@ -22,26 +22,26 @@
         }
         
         .editor {
-            background-color: $white-bg;
-            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .03), 0 2px 20px 10px rgba(0, 0, 0, .02);
-            grid-area: 2 / 2 / 6 / 6;
-            z-index: 5;
-            border-radius: 6px;
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
             &__text-area {
                 font-family: 'Roboto', sans-serif;
+                color: $black87;
                 min-width: 90%;
                 min-height: 80%;
                 background-color: $white-bg;
                 border: none;
+                &::placeholder {
+                    color: $black38;
+                }
             }
             &__title {
+                color: #F479A6;
                 background-color: $white-bg;
                 border: 0px;
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid $pink38;
                 min-width: 100%;
+                &::placeholder {
+                    color: $pink38;
+                }
             }
             &__wrapper {
                 align-self: flex-end;
@@ -51,11 +51,18 @@
         
         .footer {
             font-family: 'Roboto', sans-serif;
+            font-size: 0.875rem;
+            color: $black38;
             background-color: $lightgray;
-            grid-area: 5 / 1 / 7 / 7;
             display: flex;
             justify-content: center;
             align-items: center;
+            grid-area: 6 / 2 / 7 / 6;
+            z-index: 2;
+            &__background {
+                grid-area: 5 / 1 / 7 / 7;
+                background-color: $lightgray;
+            }
         }
         
         .header {
@@ -92,8 +99,18 @@
         }
         
         .main {
-            background-color: $lightgray;
-            grid-area: 3 / 1 / 5 / 7;
+            background-color: $white-bg;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .03), 0 2px 20px 10px rgba(0, 0, 0, .02);
+            grid-area: 2 / 2 / 6 / 6;
+            z-index: 5;
+            border-radius: 6px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            &__background {
+                background-color: $lightgray;
+                grid-area: 3 / 1 / 5 / 7;
+            }
         }
         
         .navigation {

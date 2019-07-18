@@ -330,49 +330,51 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px; }
 
-.editor {
+.editor__text-area {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  min-width: 90%;
+  min-height: 80%;
   background-color: #FAFAFA;
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.03), 0 2px 20px 10px rgba(0, 0, 0, 0.02);
-          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.03), 0 2px 20px 10px rgba(0, 0, 0, 0.02);
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-area: 2 / 2 / 6 / 6;
-  z-index: 5;
-  border-radius: 6px;
-  padding: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .editor__text-area {
-    font-family: 'Roboto', sans-serif;
-    min-width: 90%;
-    min-height: 80%;
-    background-color: #FAFAFA;
-    border: none; }
-  .editor__title {
-    background-color: #FAFAFA;
-    border: 0px;
-    border-bottom: 1px solid black;
-    min-width: 100%; }
-  .editor__wrapper {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    padding: 16px; }
+  border: none; }
+  .editor__text-area::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.541327); }
+  .editor__text-area::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.541327); }
+  .editor__text-area:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.541327); }
+  .editor__text-area::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.541327); }
+  .editor__text-area::placeholder {
+    color: rgba(0, 0, 0, 0.541327); }
+
+.editor__title {
+  color: #F479A6;
+  background-color: #FAFAFA;
+  border: 0px;
+  border-bottom: 1px solid rgba(249, 154, 171, 0.38);
+  min-width: 100%; }
+  .editor__title::-webkit-input-placeholder {
+    color: rgba(249, 154, 171, 0.38); }
+  .editor__title::-moz-placeholder {
+    color: rgba(249, 154, 171, 0.38); }
+  .editor__title:-ms-input-placeholder {
+    color: rgba(249, 154, 171, 0.38); }
+  .editor__title::-ms-input-placeholder {
+    color: rgba(249, 154, 171, 0.38); }
+  .editor__title::placeholder {
+    color: rgba(249, 154, 171, 0.38); }
+
+.editor__wrapper {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 16px; }
 
 .footer {
   font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.541327);
   background-color: #F5F5F5;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: 5 / 1 / 7 / 7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,7 +383,20 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 6 / 2 / 7 / 6;
+  z-index: 2; }
+  .footer__background {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: 5 / 1 / 7 / 7;
+    background-color: #F5F5F5; }
 
 .header {
   -ms-grid-row: 1;
@@ -425,12 +440,31 @@ body {
     color: #FEFEFE; }
 
 .main {
-  background-color: #F5F5F5;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: 3 / 1 / 5 / 7; }
+  background-color: #FAFAFA;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.03), 0 2px 20px 10px rgba(0, 0, 0, 0.02);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.03), 0 2px 20px 10px rgba(0, 0, 0, 0.02);
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 2 / 2 / 6 / 6;
+  z-index: 5;
+  border-radius: 6px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .main__background {
+    background-color: #F5F5F5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: 3 / 1 / 5 / 7; }
 
 .navigation__list {
   list-style-type: none;

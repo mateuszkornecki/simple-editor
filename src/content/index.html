@@ -26,13 +26,16 @@
 
 <body>
     <!--TODO: ADD FORM FEATURES-->
+    <!-- ! IT SHOULD BE BETTER WITH SUBGRID-->
     <div class="header__background"></div>
     <header class="header">
         <div class="header__wrapper">
             <h1 class="header__heading">Simple editor</h1>
-            <span class="header__description">Prosty edytor tekstowy, przechowujący wpisaną treść w xx pamięci,
-                całkowicie odporny na odświerzanie. <br> UI strony zainspirowane layoutem
-                <a class="header__link" href="#">conventionalcommits.org</a></span>
+            <span class="header__description">
+                Prosty edytor tekstowy, przechowujący wpisaną treść w xx pamięci,
+                całkowicie odporny na odświerzanie. <br>
+                UI strony zainspirowane layoutem <a class="header__link" href="#">conventionalcommits.org</a>
+            </span>
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a href="#editor" class="navigation__link">Editor</a>
@@ -46,20 +49,24 @@
     </header>
     <div class="header__background"></div>
     <main class="main" id="editor">
-    </main>
-    <div class="editor">
         <h2 class="editor__heading">
-            <input class="editor__title" placeholder="Title">
+            <input class="editor__title" placeholder="Enter your title ..">
         </h2>
-        <textarea class="editor__text-area" placeholder="Just start typing..">sad</textarea>
+        <textarea class="editor__text-area" placeholder="Just start typing.."></textarea>
         <div class="editor__wrapper">
             <button> load </button>
             <button> save </button>
         </div>
+    </main>
+    <div class="main__background">
     </div>
+    <footer class="footer">
+        Created with ❤️ in Cracow
+    </footer>
+    <div class="footer__background"></div>
 
-    <div class="footer">Created with ❤️ in Cracow</div>
-    <script src="js/main.js"></script>
+    <script src=" js/main.js ">
+    </script>
 </body>
 
 </html>
