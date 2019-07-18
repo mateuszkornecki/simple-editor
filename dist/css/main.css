@@ -356,13 +356,6 @@ body {
     background-color: rgba(233, 138, 51, 0.58);
     color: #FEFEFE;
     border: none; }
-  .editor__button--load:hover {
-    background-color: rgba(233, 138, 51, 0.58);
-    color: #FEFEFE; }
-    .editor__button--load:hover .editor__button--save {
-      background: #FEFEFE;
-      color: rgba(233, 138, 51, 0.58);
-      border: 1px solid rgba(233, 138, 51, 0.58); }
 
 .editor__text-area {
   font-family: 'Roboto', sans-serif;

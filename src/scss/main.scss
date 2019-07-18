@@ -39,23 +39,11 @@
                 min-width: 100px;
                 min-height: 32px;
                 cursor: pointer;
-                &:hover {}
                 &--save {
                     margin-right: 16px;
                     background-color: $orange;
                     color: $white;
                     border: none;
-                }
-                &--load {
-                    &:hover {
-                        background-color: $orange;
-                        color: $white;
-                        .editor__button--save {
-                            background: $white;
-                            color: $orange;
-                            border: 1px solid $orange;
-                        }
-                    }
                 }
             }
             &__text-area {
