@@ -34,7 +34,8 @@
             <span class="header__description">
                 Prosty edytor tekstowy, przechowujący wpisaną treść w xx pamięci,
                 całkowicie odporny na odświerzanie. <br>
-                UI strony zainspirowane layoutem <a class="header__link" href="#">conventionalcommits.org</a>
+                UI strony zainspirowane layoutem <a class="header__link"
+                    href="https://www.conventionalcommits.org/">conventionalcommits.org</a>
             </span>
             <ul class="navigation__list">
                 <li class="navigation__item">
@@ -49,13 +50,17 @@
     </header>
     <div class="header__background"></div>
     <main class="main" id="editor">
-        <h2 class="editor__heading">
-            <input class="editor__title" placeholder="Enter your title ..">
-        </h2>
-        <textarea class="editor__text-area" placeholder="Just start typing.."></textarea>
+
+        <div class="editor__divoza">
+            <h2 class="editor__heading">
+                <input class="editor__title" placeholder="Enter your title ..">
+            </h2>
+
+            <textarea class="editor__text-area" placeholder="Just start typing.."></textarea>
+        </div>
         <div class="editor__wrapper">
-            <button> load </button>
-            <button> save </button>
+            <button class="editor__button editor__button--save"> save </button>
+            <button class="editor__button"> load </button>
         </div>
     </main>
     <div class="main__background">
