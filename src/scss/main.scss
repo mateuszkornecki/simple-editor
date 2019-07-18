@@ -30,6 +30,7 @@
             &__button {
                 background: $white;
                 color: $orange;
+                border: 1px solid $orange;
                 text-decoration: none;
                 display: flex;
                 justify-content: center;
@@ -37,21 +38,23 @@
                 border-radius: 16px;
                 min-width: 100px;
                 min-height: 32px;
-                border: 1px solid $orange;
                 cursor: pointer;
-                &:hover {
-                    background-color: $orange;
-                    color: $white;
-                }
+                &:hover {}
                 &--save {
                     margin-right: 16px;
                     background-color: $orange;
                     color: $white;
                     border: none;
+                }
+                &--load {
                     &:hover {
-                        background-color: $white;
-                        color: $orange;
-                        border: 1px solid $orange;
+                        background-color: $orange;
+                        color: $white;
+                        .editor__button--save {
+                            background: $white;
+                            color: $orange;
+                            border: 1px solid $orange;
+                        }
                     }
                 }
             }
@@ -68,10 +71,13 @@
                 }
             }
             &__title {
+                font-size: 1.5rem;
                 color: $pink;
                 background-color: $white-bg;
                 border: 0px;
                 border-bottom: 1px solid $pink38;
+                margin-bottom: 16px;
+                padding-bottom: 8px;
                 min-width: 100%;
                 &::placeholder {
                     color: $pink38;
