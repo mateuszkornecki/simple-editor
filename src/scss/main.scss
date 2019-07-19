@@ -24,9 +24,6 @@
         }
         
         .editor {
-            &__divoza {
-                min-height: 80%;
-            }
             &__button {
                 background: $white;
                 color: $orange;
@@ -71,7 +68,7 @@
                     color: $pink38;
                 }
             }
-            &__wrapper {
+            &__wrapper-2 {
                 display: flex;
                 align-self: flex-end;
                 // padding: 16px;
@@ -80,17 +77,23 @@
         
         .footer {
             font-family: 'Roboto', sans-serif;
-            font-size: 0.875rem;
+            font-size: 0.75rem;
             color: $black38;
             background-color: $lightgray;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             grid-area: 6 / 2 / 7 / 6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 16px 0 16px;
+            padding: 0 32px 0 32px;
             z-index: 2;
             &__background {
                 grid-area: 5 / 1 / 7 / 7;
                 background-color: $lightgray;
+            }
+            &__logo {
+                max-width: 16px;
+                max-height: 16px;
             }
         }
         

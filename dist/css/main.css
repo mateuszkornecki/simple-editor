@@ -330,9 +330,6 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px; }
 
-.editor__divoza {
-  min-height: 80%; }
-
 .editor__button {
   background: #FEFEFE;
   color: rgba(233, 138, 51, 0.58);
@@ -396,7 +393,7 @@ body {
   .editor__title::placeholder {
     color: rgba(249, 154, 171, 0.38); }
 
-.editor__wrapper {
+.editor__wrapper-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,23 +402,25 @@ body {
 
 .footer {
   font-family: 'Roboto', sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: rgba(0, 0, 0, 0.541327);
   background-color: #F5F5F5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: 6 / 2 / 7 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 16px 0 16px;
+  padding: 0 32px 0 32px;
   z-index: 2; }
   .footer__background {
     -ms-grid-row: 5;
@@ -430,6 +429,9 @@ body {
     -ms-grid-column-span: 6;
     grid-area: 5 / 1 / 7 / 7;
     background-color: #F5F5F5; }
+  .footer__logo {
+    max-width: 16px;
+    max-height: 16px; }
 
 .header {
   -ms-grid-row: 1;
