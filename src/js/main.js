@@ -18,6 +18,8 @@ editorTextArea.addEventListener('keyup', (e) => {
 editorSaveButton.addEventListener('click', (e) => {
     const noteStringify = JSON.stringify(note);
     localStorage.setItem('note', noteStringify);
+    editorTitle.value = "";
+    editorTextArea.value = "";
 })
 
 
