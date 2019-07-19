@@ -7,7 +7,8 @@
         }
         
         //! IMPORTANT
-        // TODO: add styling to link elements :LoVe HAte
+        // TODO: LoVe HAte, check if all items are needed!! - LINKS
+        //! IMPORTANT
         *,
         *:before,
         *:after {
@@ -24,6 +25,21 @@
         }
         
         .editor {
+            background-color: $white-bg;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .03), 0 2px 20px 10px rgba(0, 0, 0, .02);
+            grid-area: 2 / 2 / 6 / 6;
+            z-index: 5;
+            border-radius: 6px;
+            padding: 32px;
+            margin: 0 1rem 0 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100%;
+            &__background {
+                background-color: $lightgray;
+                grid-area: 3 / 1 / 5 / 7;
+            }
             &__button {
                 background: $white;
                 color: $orange;
@@ -126,7 +142,6 @@
                 }
             }
             &__link {
-                // ! LoVe HAte
                 &:link {
                     color: $white;
                     text-decoration: none;
@@ -134,7 +149,6 @@
                     padding-bottom: 1px;
                 }
                 &:visited {
-                    //need to think abou thiat
                     color: $white;
                 }
                 &:hover {
