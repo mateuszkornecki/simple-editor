@@ -18,7 +18,7 @@
         body {
             font-family: 'Open Sans', sans-serif;
             display: grid;
-            grid-template-columns: 1fr minmax(auto, 120px) minmax(auto, 210px) minmax(auto, 210px) minmax(auto, 210px) 1fr;
+            grid-template-columns: 1fr minmax(auto, 210px) minmax(auto, 210px) minmax(auto, 210px) minmax(auto, 210px) 1fr;
             grid-template-rows: 95vh 5vh 35vh 35vh 5vh 10vh;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
@@ -35,7 +35,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 100%;
+            // min-height: 100%;
             &__background {
                 background-color: $lightgray;
                 grid-area: 3 / 1 / 5 / 7;
@@ -120,6 +120,7 @@
             align-items: center;
             padding: 32px;
             color: $white;
+            height: 100%;
             &__background {
                 background: $pink;
                 background: $gradient;
@@ -139,6 +140,9 @@
                 height: 100px;
                 &::after {
                     content: ">_";
+                }
+                @media (max-width:$mobile) {
+                    display: none;
                 }
             }
             &__link {
