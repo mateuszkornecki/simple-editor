@@ -1,22 +1,34 @@
-"use strict";
-
-// service worker registration - remove if you're not going to use it
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
+const editorTitle = document.querySelector(".editor__title--js");
+const editorTextArea = document.querySelector(".editor__text-area--js");
+const editorSaveButton = document.querySelector(".editor__save-button--js");
+const editorLoadButton = document.querySelector(".editor__load-button--js");
+const note = {
+    title: ``,
+    text: ``
 }
 
-// place your code below
+editorTitle.addEventListener('keyup', (e) => {
+    note.title = editorTitle.value;
+})
+
+editorTextArea.addEventListener('keyup', (e) => {
+    note.text = editorTextArea.value;
+})
+
+editorSaveButton.addEventListener('click', (e) => {
+    const noteStringify = JSON.stringify(note);
+    localStorage.setItem('note', noteStringify);
+})
 
 
-console.log(`Hello world!`);
+editorLoadButton.addEventListener('click', (e) => {
 
-
+    if (localStorage.getItem('note')) {
+        const note = localStorage.getItem('note');
+        const noteParse = JSON.parse(note);
+        editorTitle.value = noteParse.title;
+        editorTextArea.value = noteParse.text;
+    } else {
+        alert('You need to create and save a note first!');
+    }
+})
