@@ -326,10 +326,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 0; }
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
 
 .main {
   display: -webkit-box;

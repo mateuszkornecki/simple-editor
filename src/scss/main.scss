@@ -22,8 +22,7 @@ body {
 .button {
     &__container {
         display: flex;
-        justify-content: flex-end;
-        margin-bottom: 0;
+        align-self: flex-end;
     }
 }
 
