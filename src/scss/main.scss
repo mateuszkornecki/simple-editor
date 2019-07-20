@@ -224,7 +224,7 @@
                     border: 1px solid $white;
                 }
                 @media (hover: hover) {
-                    &a:hover {
+                    &:hover {
                         background-color: $white;
                         color: #F479A6;
                     }

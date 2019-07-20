@@ -608,7 +608,7 @@ body {
     color: #F5F5F5;
     border: 1px solid #FEFEFE; }
   @media (hover: hover) {
-    .navigation__linka:hover {
+    .navigation__link:hover {
       background-color: #FEFEFE;
       color: #F479A6; } }
   .navigation__link:active {
