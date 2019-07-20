@@ -136,7 +136,7 @@
                 font-weight: normal;
             }
             &__logo {
-                @keyframes animacja {
+                @keyframes cursor-animation {
                     0% {
                         content: '';
                     }
@@ -161,7 +161,7 @@
                 min-height: 100px;
                 &::before {
                     content: "";
-                    animation: animacja 1.5s step-end infinite;
+                    animation: cursor-animation 1.5s step-end infinite;
                 }
                 @media (max-width:$mobile) {
                     display: none;

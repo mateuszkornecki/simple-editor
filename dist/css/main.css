@@ -512,7 +512,7 @@ body {
     min-width: 100px;
     min-height: 100px; }
 
-@-webkit-keyframes animacja {
+@-webkit-keyframes cursor-animation {
   0% {
     content: ''; }
   50% {
@@ -522,7 +522,7 @@ body {
   100% {
     content: '|'; } }
 
-@keyframes animacja {
+@keyframes cursor-animation {
   0% {
     content: ''; }
   50% {
@@ -533,8 +533,8 @@ body {
     content: '|'; } }
     .header__logo::before {
       content: "";
-      -webkit-animation: animacja 1.5s step-end infinite;
-              animation: animacja 1.5s step-end infinite; }
+      -webkit-animation: cursor-animation 1.5s step-end infinite;
+              animation: cursor-animation 1.5s step-end infinite; }
     @media (max-width: 650px) {
       .header__logo {
         display: none; } }
