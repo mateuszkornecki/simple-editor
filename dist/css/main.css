@@ -495,11 +495,46 @@ body {
     font-size: 2rem;
     font-weight: normal; }
   .header__logo {
-    font-size: 5rem;
-    width: 100px;
-    height: 100px; }
-    .header__logo::after {
-      content: ">_"; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-weight: bold;
+    color: #FEFEFE;
+    font-size: 2rem;
+    min-width: 100px;
+    min-height: 100px; }
+
+@-webkit-keyframes animacja {
+  0% {
+    content: ''; }
+  50% {
+    content: '|'; }
+  75% {
+    content: ' '; }
+  100% {
+    content: '|'; } }
+
+@keyframes animacja {
+  0% {
+    content: ''; }
+  50% {
+    content: '|'; }
+  75% {
+    content: ' '; }
+  100% {
+    content: '|'; } }
+    .header__logo::before {
+      content: "";
+      -webkit-animation: animacja 1.5s step-end infinite;
+              animation: animacja 1.5s step-end infinite; }
     @media (max-width: 650px) {
       .header__logo {
         display: none; } }

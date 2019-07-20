@@ -136,11 +136,32 @@
                 font-weight: normal;
             }
             &__logo {
-                font-size: 5rem;
-                width: 100px;
-                height: 100px;
-                &::after {
-                    content: ">_";
+                @keyframes animacja {
+                    0% {
+                        content: '';
+                    }
+                    50% {
+                        content: '|';
+                    }
+                    75% {
+                        content: ' ';
+                    }
+                    100% {
+                        content: '|';
+                    }
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                font-weight: bold;
+                color: $white;
+                font-size: 2rem;
+                min-width: 100px;
+                min-height: 100px;
+                &::before {
+                    content: "";
+                    animation: animacja 1.5s step-end infinite;
                 }
                 @media (max-width:$mobile) {
                     display: none;
