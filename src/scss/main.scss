@@ -189,17 +189,26 @@
                 padding: 0;
             }
             &__link {
-                color: $lightgray;
-                text-decoration: none;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin-right: 16px;
-                border: 1px solid $white;
                 border-radius: 16px;
                 min-width: 100px;
                 min-height: 32px;
-                &:hover {
+                text-decoration: none;
+                &:link,
+                &:visited {
+                    color: $lightgray;
+                    border: 1px solid $white;
+                }
+                @media (hover: hover) {
+                    &a:hover {
+                        background-color: $white;
+                        color: #F479A6;
+                    }
+                }
+                &:active {
                     background-color: $white;
                     color: #F479A6;
                 }

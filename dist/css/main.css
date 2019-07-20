@@ -555,8 +555,6 @@ body {
   padding: 0; }
 
 .navigation__link {
-  color: #F5F5F5;
-  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,11 +565,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 16px;
-  border: 1px solid #FEFEFE;
   border-radius: 16px;
   min-width: 100px;
-  min-height: 32px; }
-  .navigation__link:hover {
+  min-height: 32px;
+  text-decoration: none; }
+  .navigation__link:link, .navigation__link:visited {
+    color: #F5F5F5;
+    border: 1px solid #FEFEFE; }
+  @media (hover: hover) {
+    .navigation__linka:hover {
+      background-color: #FEFEFE;
+      color: #F479A6; } }
+  .navigation__link:active {
     background-color: #FEFEFE;
     color: #F479A6; }
 
