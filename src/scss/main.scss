@@ -25,6 +25,7 @@ body {
 .main {
     display: flex;
     justify-content: center;
+    background-color: $lightgray;
 }
 
 .editor {
@@ -88,27 +89,23 @@ body {
     }
 }
 
-// .footer {
-//     // grid-area: 6 / 2 / 7 / 6;
-//     font-family: 'Roboto', sans-serif;
-//     font-size: 0.75rem;
-//     color: $black38;
-//     background-color: $lightgray;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin: 0 16px 0 16px;
-//     padding: 0 32px 0 32px;
-//     z-index: 2;
-//     &__background {
-//         grid-area: 5 / 1 / 7 / 7;
-//         background-color: $lightgray;
-//     }
-//     &__logo {
-//         max-width: 16px;
-//         max-height: 16px;
-//     }
-// }
+.footer {
+    min-height: 10vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    color: $black38;
+    background-color: $lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px 0 16px;
+    padding: 0 32px 0 32px;
+    &__logo {
+        max-width: 16px;
+        max-height: 16px;
+    }
+}
+
 .header {
     height: 100vh;
     min-width: 100%;

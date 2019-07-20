@@ -328,7 +328,8 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  background-color: #F5F5F5; }
 
 .editor {
   -ms-flex-negative: 0;
@@ -385,6 +386,27 @@ body {
       color: rgba(249, 154, 171, 0.38); }
     .editor__title::placeholder {
       color: rgba(249, 154, 171, 0.38); }
+
+.footer {
+  min-height: 10vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.541327);
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 16px 0 16px;
+  padding: 0 32px 0 32px; }
+  .footer__logo {
+    max-width: 16px;
+    max-height: 16px; }
 
 .header {
   height: 100vh;
