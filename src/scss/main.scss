@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import "_animations";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext');
 html {
@@ -62,6 +63,10 @@ body {
         border-radius: 50px;
         padding: 8px 32px;
         cursor: pointer;
+        transition: transform 0.1s linear;
+        &:active {
+            transform: scale(0.94);
+        }
         &--save {
             margin-right: 16px;
             background-color: $orange;
@@ -139,20 +144,6 @@ body {
         font-weight: normal;
     }
     &__logo {
-        @keyframes animacja {
-            0% {
-                content: '';
-            }
-            50% {
-                content: '|';
-            }
-            75% {
-                content: ' ';
-            }
-            100% {
-                content: '|';
-            }
-        }
         display: flex;
         flex-shrink: 1;
         justify-content: center;
