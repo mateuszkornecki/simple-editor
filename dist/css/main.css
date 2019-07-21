@@ -389,8 +389,8 @@ body {
       padding: 1rem; } }
   .editor__button {
     background: #FEFEFE;
-    color: rgba(233, 138, 51, 0.58);
-    border: 1px solid rgba(233, 138, 51, 0.58);
+    color: #D46A43;
+    border: 1px solid #D46A43;
     text-decoration: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -416,7 +416,7 @@ body {
               transform: scale(0.94); }
     .editor__button--save {
       margin-right: 16px;
-      background-color: rgba(233, 138, 51, 0.58);
+      background-color: #D46A43;
       color: #FEFEFE;
       border: none; }
   .editor__text-area {
