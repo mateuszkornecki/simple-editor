@@ -439,24 +439,24 @@ body {
       color: rgba(0, 0, 0, 0.541327); }
   .editor__title {
     font-size: 1.5rem;
-    color: #F479A6;
+    color: #E73C4E;
     background-color: #FAFAFA;
     border: 0px;
-    border-bottom: 1px solid rgba(249, 154, 171, 0.38);
+    border-bottom: 1px solid rgba(231, 60, 78, 0.54);
     margin-bottom: 16px;
     padding-bottom: 8px;
     line-height: 2rem;
     width: 100%; }
     .editor__title::-webkit-input-placeholder {
-      color: rgba(249, 154, 171, 0.38); }
+      color: rgba(231, 60, 78, 0.54); }
     .editor__title::-moz-placeholder {
-      color: rgba(249, 154, 171, 0.38); }
+      color: rgba(231, 60, 78, 0.54); }
     .editor__title:-ms-input-placeholder {
-      color: rgba(249, 154, 171, 0.38); }
+      color: rgba(231, 60, 78, 0.54); }
     .editor__title::-ms-input-placeholder {
-      color: rgba(249, 154, 171, 0.38); }
+      color: rgba(231, 60, 78, 0.54); }
     .editor__title::placeholder {
-      color: rgba(249, 154, 171, 0.38); }
+      color: rgba(231, 60, 78, 0.54); }
 
 .footer {
   min-height: 10vh;
@@ -494,7 +494,7 @@ body {
 .header {
   height: 100vh;
   min-width: 100%;
-  background: #F479A6;
+  background: #E73C4E;
   background: -webkit-linear-gradient(334.24deg, #F479A6 6.65%, rgba(233, 138, 51, 0.58) 86.69%);
   background: -o-linear-gradient(334.24deg, #F479A6 6.65%, rgba(233, 138, 51, 0.58) 86.69%);
   background: linear-gradient(115.76deg, #F479A6 6.65%, rgba(233, 138, 51, 0.58) 86.69%);
@@ -548,7 +548,7 @@ body {
     color: #FEFEFE; }
   .header__link:hover {
     background: #FEFEFE;
-    color: #F479A6;
+    color: #E73C4E;
     text-decoration: none; }
   .header__welcome {
     -ms-flex-negative: 1;
