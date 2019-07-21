@@ -91,13 +91,13 @@ body {
         color: $pink;
         background-color: $white-bg;
         border: 0px;
-        border-bottom: 1px solid $pink38;
+        border-bottom: 1px solid $acess-pink38;
         margin-bottom: 16px;
         padding-bottom: 8px;
         line-height: 2rem;
         width: 100%;
         &::placeholder {
-            color: $pink38;
+            color: $acess-pink38;
         }
     }
 }
