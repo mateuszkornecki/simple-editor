@@ -51,8 +51,8 @@
     <main class="main">
         <section class="editor" id="editor">
             <div class="editor__note">
-                <input class=" editor__title editor__title--js " placeholder=" Enter your title .. ">
-                <textarea class=" editor__text-area editor__text-area--js " placeholder=" Just start typing.. "></textarea>
+                <input name="note__title" type="text" class=" editor__title editor__title--js " placeholder=" Enter your title .. " aria-label="Title of your note.">
+                <textarea type="text" name="note__content" class=" editor__text-area editor__text-area--js " placeholder=" Just start typing.. " aria-label="Content of your note."></textarea>
             </div>
             <div class="button__container">
                 <button class=" editor__button editor__button--save editor__save-button--js "> save </button>
