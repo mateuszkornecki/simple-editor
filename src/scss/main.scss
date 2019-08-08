@@ -5,11 +5,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext');
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-//! IMPORTANT
-// TODO: LoVe HAte, check if all items are needed!! - LINKS
-//! IMPORTANT
 *,
 *:before,
 *:after {
