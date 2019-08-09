@@ -5,7 +5,10 @@ Feel free to check out the finall [result](https://mateuszkornecki.github.io/sim
 
 ## About the project 
 This website was created as finall project of WTF - Co ten frontend course. <br> 
-The main goal of this project was to create simple editor that will keep your notes in local storage.
+
+The main purpose of this task was to create a layout design in figma. Then recreate it and make a simple editor that will store your notes in Local Storage.
+
+The layout of this website was inspired by [conventionalcommits.org](https://www.conventionalcommits.org/).
 
 ## Tools and technologies I've used 
 - Semantic HTML5
